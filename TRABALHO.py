@@ -91,6 +91,15 @@ tk.Label(root, text="Periodo").pack()
 entry_tempo = tk.Entry(root, textvariable  = period_var, font=('arial',12))
  
 entry_tempo.pack()
+
+tipo_quarto = tk.StringVar(value="")
+ 
+tk.Label(root, text="Escolha o tipo de quarto: ").pack()
+
+tk.Radiobutton(root, text="Quarto premium", variable = tipo_quarto, value = "premium"). pack()
+
+tk.Radiobutton(root, text="Quarto comum", variable = tipo_quarto, value= "comum" ).pack()
+
  
 b1= tk.Button(root, text= "confirma")
  
