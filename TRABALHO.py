@@ -106,6 +106,10 @@ b1= tk.Button(root, text= "confirma")
 b1['command']= reservas
  
 b1.pack()
+
+btn_sair = tk.Button(root, text="Sair", command=root.destroy)
+
+btn_sair.pack()
  
 PegaValores()
 
